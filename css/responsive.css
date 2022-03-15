@@ -1,0 +1,627 @@
+/* レシポンシブ */
+
+@media(max-width:1200px){
+    .logo-item{
+        position: relative;
+        padding-top: 2px;
+        flex-basis: 20%;
+    }
+
+    .contact .contact-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 30px;
+    }
+}
+
+@media(max-width:990px){
+
+
+    .header-nav ul li a{
+        padding: 0 10px;
+    }
+  
+    .logo-item {
+        position: relative;
+        flex-basis: 24%;
+    }
+
+    .logo-item .cycle-one{
+        width: 180px;
+        height: 180px;
+    }
+    .logo-item .cycle-two{
+        width: 160px;
+        height: 160px;
+    }
+    .logo-item .cycle-three{
+        width: 140px;
+        height: 140px;
+    }
+
+    .logo-item img:nth-last-of-type(1){
+        width: 182px;
+        left: 1%;
+        display: block;
+        position: absolute;
+    }
+
+    .logo-item img:nth-last-of-type(2){
+        width: 182px;
+        left: 1%;
+        display: block;
+        position: absolute;
+    }
+
+    .header-titel .logo-text h1{
+        font-size: 150px;
+        padding: 15px 0;    
+    }
+
+    .header-nav ul li a{
+        font-size: 25px;
+    }
+
+    .about-phrase.vision{
+        width: 40%;
+        height: 100%;
+    }
+
+    .about-phrase.vision p:nth-of-type(1) {
+        font-size: 26px;
+    }
+
+    .about-phrase.vision p:nth-of-type(2){
+        width: 90%;
+    }
+ 
+    .about-phrase.mission{
+        width: 40%;
+        height: 100%;
+    }
+
+       
+    .about-phrase p:nth-of-type(2){
+        font-size: 13px;
+    }
+
+    .service-box{
+        flex-direction: column-reverse !important;
+    }
+
+    .service-text{
+        width: 60%;
+    }
+
+    .service-text p:nth-child(2) {
+        width: 94%;
+    }
+
+    .service-text p:nth-child(3) {
+        width: 70%;
+    }
+    .service-text h3 {
+        font-size: 30px;
+    }
+
+    .company-box table th{
+        padding: 50px 36px;
+    }
+
+    .contact .contact-content .column.left{
+        margin-left: 50px;
+    }
+
+    .contact .contact-content .column.right{
+        margin-right: 50px;
+    }
+
+}
+
+@media(max-width:875px){
+    .logo-img::after{
+        content: ".inc";
+        display: block;
+        font-weight: 800;
+        position: absolute;
+        color: #0e0e5f;
+        top: 27%;
+        left: 36%;
+    }
+
+    .logo-item{
+        position: relative;
+        padding-top: 2px;
+        flex-basis: 27%;
+    }
+}
+
+
+@media(max-width:820px){
+
+    .logo-img img {
+        width: 40%;
+    }
+
+    .logo-img::after {
+        content: ".inc";
+        display: block;
+        font-size: 6vw;
+        font-weight: 800;
+        position: absolute;
+        color: #0e0e5f;
+        top: 27%;
+        left: 36%;
+    }
+
+    .logo-item {
+        position: relative;
+        flex-basis: 27%;
+    }
+    
+
+
+    .menu-btn{
+        opacity: 1;
+        z-index: 999;
+    }
+    
+
+    .header-nav .menu{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        right: -100%;
+        top: 0%;
+        flex-direction: column;
+        text-align: center;
+        padding: 80px;
+        background-color: rgba(61, 65, 89, 0.961);
+        transition: all 0.7s ease;
+    }
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+
+    .header-nav .menu.in-menu{
+        right: 0%;
+    }
+
+    .header-nav ul li a{
+        display: block;
+        padding: 20px 0;
+    }
+
+    .logo-item img {
+        width: 170px;
+        left: 2%;
+        top: 4%;
+    }
+
+    .header-titel .logo-text h1{
+        font-size: 130px;
+        padding: 15px 0;    
+    }
+
+    .about-phrase.vision p:nth-of-type(1) {
+        font-size: 20px;
+    }
+
+    .about-phrase.mission p:nth-of-type(1) {
+        font-size: 20px;
+    }
+
+    .about-phrase.vision p:nth-of-type(2){
+        font-size: 11px;
+    }
+
+    .about-phrase.mission p:nth-of-type(2){
+        font-size: 11px;
+        width: 84%;
+    }
+}
+
+@media(max-width:786px){
+
+    .logo-item img {
+        width: 170px;
+        left: 2%;
+        top: 4%;
+    }
+
+    .header-titel .logo-text h1{
+        font-size: 120px;
+        padding: 15px 0;    
+    }
+
+    .about-phrase.vision {
+        width: 45%;
+        height: 100%;
+    }
+
+    .about-phrase.mission {
+        width: 45%;
+        height: 100%;
+    }
+
+    .about-phrase.vision{
+        padding: 100px 20px;
+    }
+
+    .about-phrase.mission{
+        padding: 100px 20px;
+    }
+}
+
+@media(max-width:680px){
+
+   
+    .logo-item{
+        flex-basis: 26%;
+    }
+
+    .header-titel .logo-text h1 {
+        font-size: 100px;
+        padding: 10px 0;
+    }
+
+    
+    .logo-item .cycle-one{
+        width: 120px;
+        height: 120px;
+    }
+    .logo-item .cycle-two{
+        width: 100px;
+        height: 100px;
+    }
+    .logo-item .cycle-three{
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-item img:nth-last-of-type(1) {
+        width: 112px;
+        left: 1%;
+        display: block;
+        position: absolute;
+    }
+
+    .logo-item img:nth-last-of-type(2) {
+        width: 116px;
+        left: 2%;
+        display: block;
+        position: absolute;
+    }
+    
+    .about-phrase h3{
+        font-size: 13px;
+    }
+
+    .about-phrase.vision p:nth-of-type(1) {
+        font-size: 13px;
+    }
+
+    .about-phrase.mission p:nth-of-type(1) {
+        font-size: 13px;
+    }
+
+    .contact .contact-content{
+        flex-direction: column;
+    }
+
+    .contact .contact-content .column{
+        width: 90%;
+    }
+
+    .contact .contact-content .column.right {
+        margin: 0 30px;
+    }
+
+    .contact .contact-content .column.left {
+        margin: 0 30px;
+    }
+
+    .company-box table th {
+        padding: 50px 25px;
+    }
+
+}
+
+@media(max-width:540px){
+    .header-titel .logo-text h1{
+        font-size: 90px;
+        padding: 10px 0;
+    }
+
+    .header-titel .logo-text p{
+        font-size: 1.8em;
+    }
+
+    .logo-item {
+        position: relative;
+        flex-basis: 28%;
+    }
+
+    .about-phrase.vision p:nth-of-type(2){
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .about-phrase.mission p:nth-of-type(2){
+        width: 100%;
+        padding-bottom: 20px;
+
+    }
+
+    .about-phrase h2 {
+        display: flex;
+        align-items: center;
+        margin: 15px 0px;
+        padding-top: 10px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .foote-nav ul li a{
+      padding: 0 10px;
+    }
+}
+
+@media(max-width:450px){
+    .header-titel .logo-text h1{
+        font-size: 60px;
+    }
+
+    .header-titel .logo-text p{
+        font-size: 1.4em;
+    }
+
+    .logo-item {
+        position: relative;
+        flex-basis: 24%;
+    }
+
+    .logo-item .cycle-one{
+        width: 80px;
+        height: 80px;
+
+    }
+    .logo-item .cycle-two{
+        width: 60px;
+        height: 60px;
+    }
+    .logo-item .cycle-three{
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .logo-item img {
+        width: 75px;
+        left: 6%;
+        top: 4%;
+    }
+
+
+    .foote-nav ul li {
+        letter-spacing: 1.3px;
+        font-size: 15px;
+        color: #fff;
+        margin: 18px;
+    }
+
+}
+
+@media(max-width:412px){
+  
+    .header-titel .logo-text p {
+        font-size: 1.2em;
+    }
+    
+    .logo-item .cycle-one{
+        border: 4px solid #1106ba;
+    }
+
+    .logo-item .cycle-two{
+        border: 4px solid #1106ba;
+    }
+
+    .logo-item .cycle-three{
+        border: 4px solid #1106ba;
+    }
+
+    .logo-item img:nth-last-of-type(1){
+        width: 74px;
+        left: 1%;
+        display: block;
+        position: absolute;
+    }
+
+    .logo-item img:nth-last-of-type(2){
+        width: 74px;
+        left: 4%;
+        display: block;
+        position: absolute;
+    }
+
+
+    .foote-nav ul{
+        flex-direction: column !important;
+    }
+
+    .foote-nav ul li{
+        font-size: 20px;
+    }
+   
+}
+
+
+
+@media(max-width:375px){
+    .logo-item img:nth-last-of-type(1) {
+        width: 75px;
+        left: 1%;
+        display: block;
+        position: absolute;
+    }
+
+    .logo-item img:nth-last-of-type(2) {
+        width: 75px;
+        left: 1%;
+        display: block;
+        position: absolute;
+    }
+
+    .header-titel .logo-text p {
+        font-size: 1.2em;
+    }
+
+    .about-phrase.vision p:nth-of-type(1) {
+        font-size: 12px;
+    }
+
+    
+
+    .company-box table th {
+        padding: 50px 15px;
+    }
+
+
+    .company-box td{
+        padding: 50px 25px;
+    }
+
+    .foote-nav ul li{
+        letter-spacing: 1.3px;
+        color: #fff;
+    }
+
+}
+
+@media(max-width:280px){
+    .header-titel .logo-text h1{
+        font-size: 35px;
+    }
+
+    .header-titel .logo-text p {
+        font-size: 0.7em;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .logo-item {
+        position: relative;
+        flex-basis: 31%;
+    }
+
+    .logo-item .cycle-one{
+        width: 75px;
+        height: 75px;
+        border: 3px solid #1106ba;
+
+    }
+    .logo-item .cycle-two{
+        width: 64px;
+        height: 64px;
+        margin-top: 6px;
+        margin-left: 6px;
+        border: 3px solid #1106ba;
+
+    }
+    .logo-item .cycle-three{
+        width: 52px;
+        height: 52px;
+        margin-top: 10px;
+        margin-left: 12px;
+        border: 3px solid #1106ba;
+
+    }
+
+    .logo-item img {
+        width: 55px;
+        left: 6%;
+        top: 4%;
+        z-index: 999;
+    }
+
+    .logo-item img:nth-last-of-type(1) {
+        width: 67px;
+        left: 5%;
+        margin-top: 4px;
+        display: block;
+        position: absolute;
+    }
+
+    .logo-item img:nth-last-of-type(2) {
+        width: 67px;
+        left: 5%;
+        margin-top: 4px;
+        display: block;
+        position: absolute;
+    }
+
+    .section-titel h2 {
+        display: flex;
+        align-items: center;
+        padding-bottom: 50px;
+        font-size: 32px;
+    }
+
+    .section-titel h2::before {
+        content: "";
+        background-color: #000;
+        display: block;
+        width: 30%;
+        height: 3px;
+        margin: 0 20px;
+    }
+
+    .about-contents img {
+        width: 75%;
+        display: block;
+    }
+
+    .about-phrase.vision {
+        width: 75%;
+        height: 100%;
+        padding: 100px 30px;
+    }
+
+    .about-phrase.mission{
+        width: 75%;
+        height: 100%;
+        padding: 100px 30px;
+    }
+
+    .about-phrase.vision {
+        position: absolute;
+        top: 60%;
+        right: 7%;
+    }
+    
+    .about-phrase.mission {
+        position: absolute;
+        top: 60%;
+        left: 7%;
+    }
+
+    .service-text h3 {
+        font-size: 28px;
+        margin: 20px 0;
+    }
+
+    .service-text p:nth-child(2) {
+        font-size: 22px;
+    }
+
+    .service-text p:nth-child(3) {
+        width: 84%;
+    }
+
+    .company-box table th {
+        padding: 50px 5px;
+    }
+
+}

@@ -1,0 +1,664 @@
+*{
+    font-family: 'Helvetica', -apple-system, BlinkMacSystemFont, YuGothic, "Yu Gothic Medium", "Yu Gothic", 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, Arial, 'メイリオ', Meiryo, sans-serif;
+}
+
+/* header styale start */
+
+.header-nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 10%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 5;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.header-nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.header-nav ul li a{
+    display: block;
+    font-size: 20px;
+    margin: 0 25px;
+    transition: all 0.1s ease;
+}
+
+.header-nav ul li a:active{
+    border-bottom: 3px solid #1106ba;
+}
+
+.header-nav ul li a:hover{
+    cursor: pointer;
+    color: #1106ba;
+}
+
+.menu-btn{
+    opacity: 0;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+
+
+.logo-img.active-img{
+    opacity: 1;
+    transition: all 1.5s ease-out;
+}
+
+.header-nav.nav-bg.on-bg{
+    opacity: 1;
+}
+
+.nav-bg{
+    top: 0%;
+    background-color: #fff;
+}
+
+.logo-img{
+    position: relative;
+    opacity: 0;
+}
+
+.logo-img img{
+    width: 40%;
+}
+
+.logo-img::after {
+    content: ".inc";
+    display: block;
+    font-size: 3vw;
+    font-weight: 800;
+    position: absolute;
+    color: #0e0e5f;
+    top: 27%;
+    left: 36%;
+}
+
+
+/* logo-item style start */
+.header-titel{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    padding-top: 150px;
+}
+    .logo-item{
+        position: relative;
+        padding-top: 2px;
+        flex-basis: 17%;
+    }
+
+    .logo-item .cycle-one{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        opacity: 0; 
+        top: 70%;
+        border: 6px solid #1106ba;
+    }
+    
+    .logo-item .cycle-two{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        position: absolute;
+        opacity: 0; 
+        top: -70%;
+        margin-left: 10px;
+        margin-top: 10px;
+        border: 6px solid #1106ba;
+    }
+    
+    .logo-item .cycle-three{
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        position: absolute;
+        opacity: 0;
+        left: 60%;
+        margin-left: 20px;
+        margin-top: 18px;
+        border: 6px solid #1106ba;
+    }
+
+    .logo-item img:nth-last-of-type(1){
+        width: 190px;
+        left: 2%;
+        top: -70%;
+        opacity: 0;
+        display: block;
+        position: absolute;
+    }
+
+    .logo-item img:nth-last-of-type(2){
+        width: 190px;
+        left: 2%;
+        top: 70%;
+        opacity: 0;
+        display: block;
+        position: absolute;
+    }
+
+    /* logo-item style end */
+
+
+
+    /* logo-text style start */
+
+    .header-titel .logo-text h1{
+        font-size: 200px;
+        color: #0e0e5f;
+        opacity: 0;
+        font-family: 'DM Serif Display', serif;
+    }
+
+    .header-titel .logo-text p{
+        font-size: 2em;
+        margin-top: 20px;
+        text-align: center;
+        width: 90%;
+        opacity: 0;
+        padding-top: 10px;
+
+    }
+
+    /* logo-text style end */
+
+
+/* header-titel style end*/
+
+/* header styale end */
+
+/* main styale start */
+main{
+    margin: 200px 0;
+}
+
+.service,
+.company,
+.contact,
+.about{
+    padding-top: 120px;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-titel{
+    text-align: start;
+    font-size: 50px;
+    color: #1106ba;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section-titel h2{
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.section-titel.about h2::after{
+    content: "私たちについて";
+    color: #005ad1;
+    font-size: 10px;
+    display: block;
+    width: 80%;
+    margin: 0 20px;
+    padding-top: 10px;
+}
+
+.section-titel.service h2::after{
+    content: "事業内容";
+    color: #005ad1;
+    font-size: 10px;
+    display: block;
+    width: 80%;
+    margin: 0 20px;
+    padding-top: 10px;
+}
+
+.section-titel.company h2::after{
+    content: "会社概要";
+    color: #005ad1;
+    font-size: 10px;
+    display: block;
+    width: 80%;
+    margin: 0 20px;
+    padding-top: 10px;
+}
+
+.section-titel.contact h2::after{
+    content: "お問合せ";
+    color: #005ad1;
+    font-size: 10px;
+    display: block;
+    width: 80%;
+    margin: 0 20px;
+    padding-top: 10px;
+}
+
+.section-titel h2::before{
+    content: "";
+    background-color: #000;
+    display: block;
+    width: 10%;
+    height: 3px;
+    margin: 0 20px;
+}
+
+/* about area style */
+
+.about-contents{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+    position: relative;
+    /* padding-top: 100px; */
+}
+
+.about-contents img{
+    width: 60%;
+    display: block;
+}
+
+.about-phrase.vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    height: 88%;
+    padding: 75px 20px;
+    background-color: #f2f1ee;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.about-phrase.mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    height: 85%;
+    padding: 75px 20px;
+    background-color: #f2f1ee;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.about-phrase.vision {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+.about-phrase.mission {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+
+.about-phrase h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-phrase h2::before{
+    content: "";
+    display: block;
+    margin: 0 5px;
+    width: 2%;
+    height: 2px;
+    background-color: #000;
+}
+
+.about-phrase h3{
+    color: #005ad1;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #808080;
+}
+
+.about-phrase.vision p:nth-of-type(1){
+    font-size: 34px;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+.about-phrase.mission p:nth-of-type(1){
+    font-size: 30px;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+.about-phrase.vision p:nth-of-type(2){
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.about-phrase.mission p:nth-of-type(2){
+    font-size: 13px;
+    line-height: 1.5;
+
+}
+/* about area style end*/
+
+/* service style start */
+.service-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.service-box:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.service-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 30px;
+    height: 300px;
+    width: 30%;
+}
+
+.service-text h3{
+    display: flex;
+    flex-direction: column;
+    color: #005ad1;
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.service-text p:nth-child(2){
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+.service-wd
+{
+    width: 72%;
+}
+
+.service-text p:nth-child(3){
+    font-size: 13px;
+    line-height: 1.4;
+    width: 59%;
+}
+
+.service-box img{
+    display: block;
+    width: 50%;
+}
+
+/* service style end */
+
+.company-box{
+    width: 90%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.company-box table{
+    width: 100%;
+}
+
+.company-box tr:nth-child(1){
+    border-top: 2px solid #b3b3b3;
+}
+
+
+.company-box tr{
+    border-bottom: 2px solid #b3b3b3;
+    display: flex;
+}
+
+
+    .company-box th{
+        display: inline-block;
+        width: 25%;
+        padding: 50px 93px;
+        background-color: #f2f1ee;
+        border-left: 2px solid #b3b3b3;
+        border-right: 2px solid #b3b3b3;
+    }
+
+
+.company-box td{
+    width: 75%;
+    display: inline-block;
+    border-right: 2px solid #b3b3b3;
+    padding: 50px 60px;
+}
+
+
+
+
+/* contact style */
+
+
+
+.contact-title{
+    font-weight: 800;
+    text-align: center;
+    font-size: 25px;
+    color: #005ad1;
+    margin-bottom: 120px;
+}
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: #005ad1;
+}
+.contact .contact-content .info .head{
+    line-height: 2 ;
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area{
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button{
+    text-align: center;
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: #005ad1;
+  border: 2px solid #005ad1;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+  color: #005ad1;
+  background: none;
+}
+
+/* contact style end */
+
+/* main style end */
+
+/* footer area style */
+
+.footer{
+    background-color: #999;
+    overflow: hidden;
+}
+
+.foote-area .logo,
+.foote-nav,
+.sns-logo{
+    margin-bottom: 30px;
+}
+.logo a{
+    color: #fff; ;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+.logo a:hover{
+    cursor: pointer;
+    color: #005ad1;
+}
+
+.foote-area {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.foote-nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.foote-nav ul li{
+    letter-spacing: 1.3px;
+    font-size: 15px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.foote-nav ul li a{
+    padding: 0 20px;
+}
+
+.foote-nav li:hover{
+    cursor: pointer;
+    color: #005ad1;
+}
+
+.sns-logo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.sns-logo li{
+    margin: 0 30px;
+}
+
+.sns-logo li i{
+    color: #000;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.f-icon i:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #3B5998;
+
+}
+
+.t-icon i:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color:#1DA1F2;
+}
+
+.i-icon i:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color:rgb(174, 19, 225);
+}
+
+.copyright{
+    letter-spacing: 1.3px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+}
+
+
+/* main styale end */
+
+/* footer styale start */
+/* footer styale end */
