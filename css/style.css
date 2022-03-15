@@ -1,5 +1,3 @@
-@import url(../css/destyle.css);
-@import url(../css/responsive.css);
 
 *{
     font-family: 'Helvetica', -apple-system, BlinkMacSystemFont, YuGothic, "Yu Gothic Medium", "Yu Gothic", 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, Arial, 'メイリオ', Meiryo, sans-serif;
@@ -88,8 +86,9 @@
 .header-titel{
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 150px;
     padding-top: 150px;
+    width: 100%;
 }
     .logo-item{
         position: relative;
@@ -125,7 +124,7 @@
         border-radius: 50%;
         position: absolute;
         opacity: 0;
-        left: 60%;
+        left: 80%;
         margin-left: 20px;
         margin-top: 18px;
         border: 6px solid #1106ba;
