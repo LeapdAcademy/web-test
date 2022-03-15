@@ -484,6 +484,7 @@
     }
 
     .header-titel .logo-text p {
+        padding: 0;
         font-size: 1.2em;
     }
 
