@@ -183,11 +183,14 @@ main{
     margin: 200px 0;
 }
 
+.about{
+    padding-top: 110px;
+}
+
 .service,
 .company,
-.contact,
-.about{
-    padding-top: 120px;
+.contact{
+    padding-top: 90px;
 }
 
 .container{
